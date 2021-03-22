@@ -1,9 +1,9 @@
 exports.wait = () => {
-	return`*「❗」WAIT KAK*`
+	return`*「❗」ESPERE ⏳*`
 }
 
 exports.succes = () => {
-	return`*「 SUKSES 」*`
+	return`*「 COMPLETADO 」*`
 }
 
 exports.lvlon = () => {
@@ -23,11 +23,11 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「❗」BELUM VERIFIKASI「❗」*\n\nketik : @verify`
+	return`*「❗」VERIFICACION「❗」*\n\nketik : @verify`
 }
 
 exports.baned = () => {
-	return`*「❗」SORRY SORRY AJA NIH BRO, TAPI KAU SUDAH KU BANNED YAHAHAHA HAYUUU :V*`
+	return`*「❗」SORRY ESTAS BANEADO :V*`
 }
 
 exports.premium = (prefix) => {
@@ -84,15 +84,15 @@ exports.clears = () => {
 exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel) => {
 	return`
 *「 SELAMAT 」*
-\`\`\`➸ *Nama* : ${pushname}\`\`\`
-\`\`\`➸ *Nomor* : wa.me/${sender.split("@")[0]}\`\`\`
+\`\`\`➸ *Nombre* : ${pushname}\`\`\`
+\`\`\`➸ *Número* : wa.me/${sender.split("@")[0]}\`\`\`
 \`\`\`➸ *Xp* : ${getLevelingXp(sender)}\`\`\`
 \`\`\`➸ *Level* : ${getLevel} ➸ ${getLevelingLevel(sender)}\`\`\`
 `}
  
 exports.limitend = (pushname, prefix) => {
 	return`*maaf ${pushname} limit hari ini habis*
-*Limit di reset setiap jam 24:00*
+*No tienes limites*
 
 \`\`\`Upgrade Premium Bebas Limit\`\`\`
 \`\`\`➸ 20K : 1 Bulan\`\`\`
@@ -113,8 +113,8 @@ Upgrade premium bosku, biar bebas gunain bot`
 exports.uangkau = (pushname, sender, uangkau) => {
 	return`┏━━━━━━━♡ *ATM* ♡━━━━━━━┓
 ┃╭───────────────────
-┃│➸ NAMA : ${pushname}
-┃│➸ NOMOR : ${sender.split("@")[0]}
+┃│➸ NOMBRE : ${pushname}
+┃│➸ NÚMERO : ${sender.split("@")[0]}
 ┃│➸ UANG : ${uangkau}
 ┃╰───────────────────
 ┗━━━━━━━━━━━━━━━━━━━━┛`
